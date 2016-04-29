@@ -8,6 +8,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.SwitchCompat;
 import android.view.View;
 import android.widget.TextView;
@@ -30,7 +31,7 @@ public class SettingsActivity extends SilentActivity implements View.OnClickList
 			mVibrateCourseSwitch;
 	private TextView mAppVersionTextView;
 
-	private long lastDebugPressTime = 0l;
+	private long lastDebugPressTime = 0L;
 	private int easterEggCount = 0;
 
 	@Override
@@ -81,10 +82,10 @@ public class SettingsActivity extends SilentActivity implements View.OnClickList
 
 		try {
 			PackageInfo pkgInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
-			mAppVersionTextView.setText(pkgInfo.versionName);
+			mAppVersionTextView.setText(getString(R.string.version, pkgInfo.versionName));
 		} catch (PackageManager.NameNotFoundException e) {
 			e.printStackTrace();
-			mAppVersionTextView.setText("1.0.0");
+			mAppVersionTextView.setText(getString(R.string.version, "1.0.0"));
 		}
 	}
 
@@ -130,11 +131,12 @@ public class SettingsActivity extends SilentActivity implements View.OnClickList
 				if (easterEggCount == 3) {
 					mTracker.send(new HitBuilders.EventBuilder().setCategory("easter egg")
 							.setAction("click").setLabel("success").build());
-					lastDebugPressTime = 0l;
+					lastDebugPressTime = 0L;
 					easterEggCount = 0;
 					Snackbar.make(findViewById(android.R.id.content), R.string.easter_egg_juke,
 							Snackbar.LENGTH_SHORT)
-							.setActionTextColor(getResources().getColor(R.color.accent)).show();
+							.setActionTextColor(ContextCompat.getColor(this, R.color.accent))
+							.show();
 				}
 			} else {
 				easterEggCount = 1;
