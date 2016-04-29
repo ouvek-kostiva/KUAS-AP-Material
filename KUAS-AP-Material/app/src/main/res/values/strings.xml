@@ -6,7 +6,7 @@
 
 	<string name="share">Share</string>
 	<string name="teacher_confirm_title">Are you a teacher?</string>
-	<string name="teacher_confirm_content">This App only for students!</string>
+	<string name="teacher_confirm_content">Note that this App is mainly for students</string>
 	<string name="continue_to_use">Continue</string>
 	<string name="logout">Logout</string>
 	<string name="click_to_view">View</string>
@@ -34,7 +34,7 @@
 	<string name="add_cal_content">Are you sure to add \"%s\" to your calendar?</string>
 	<string name="click_to_retry">An error occurred, click to retry</string>
 	<string name="bus_pick_date">Chosen Date: %s</string>
-	<string name="bus_not_pick_date">Chosen Date</string>
+	<string name="bus_not_pick_date">Choose Date</string>
 	<string name="bus_count" formatted="false">(%s / %s)</string>
 	<string name="bus_jiangong_reservations">To YanChao, Scheduled date：</string>
 	<string name="bus_yanchao_reservations">To JianGong, Scheduled date：</string>
@@ -64,7 +64,7 @@
 	<string name="setting_internet">Internet Settings</string>
 	<string name="score_no_score">Oops! No record for this semester~\nPlease choose another semester %s</string>
 	<string name="leave_night">Rotate screen to see night school absent record %s</string>
-	<string name="leave_no_leave">Oops! No absent record for this semester~\nPlease choose another semester %s</string>
+	<string name="leave_no_leave">Wow! No absent record for this semester~\nPlease choose another semester %s</string>
 	<string name="token_expired_title">Re-login Required</string>
 	<string name="token_expired_content">Cookie has expired, please re-login!</string>
 	<string name="update_content">Update available for KUAS AP!</string>
