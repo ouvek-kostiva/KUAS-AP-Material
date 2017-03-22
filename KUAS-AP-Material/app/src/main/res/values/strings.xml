@@ -346,14 +346,14 @@
 	</array>
 
 	<array name="score_sections">
-		<item>Subject</item>
+		<item>Course</item>
 		<item>Midterm</item>
 		<item>Final</item>
 	</array>
 	<array name="score_detail_sections">
-		<item>Conduct Score：</item>
+		<item>Conduct：</item>
 		<item>Average：</item>
-		<item>You/Total Classmates：</item>
+		<item>Class Ranking：</item>
 		<item>Top % in Class：</item>
 	</array>
 
